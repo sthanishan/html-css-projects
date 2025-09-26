@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+
+    background-color: transparent;
+    height: 70px;
+    width: 100%;
+    align-content: center;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-right: 72px;
+    padding-left: 72px;
+}
+
+h1.logo {
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-size: 32px;
+    color: aliceblue;
+}
+
+div.menue{
+    display: flex;
+    justify-content: space-between;
+    gap: 63px;
+}
+div.menue a{
+    padding-left: 40px;
+    text-decoration: none;
+    font-family: "oswald";
+    font-size: 16px;
+    color: aliceblue;
+}
+div.menue a:hover{
+    color: #a94dce;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    position: absolute;
+    width: 35%;
+    bottom: 72px;
+    left: 72px;
+    }
+
+div.content{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+}
+
+h1.hello{
+    letter-spacing: 2px;
+    font-size: 52px;
+    padding-bottom: 8px;
+}
+h1.hello span{
+    color: aqua;
+}
+
+div.tag-box{
+    position: relative;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #00ffe7, #4b9fff, #9b59b6);
+    text-align: center;
+    align-content: center;
+    border: 1px solid white;
+    margin-top: 16px;
+    background-size: 300% 300%;
+     animation: gradientShift 2s ease infinite;
+
+   }
+
+   @keyframes gradientShift {
+   0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+div.tag-box:hover {
+    box-shadow: 0 0 20px #00ffe7, 
+                0 0 40px #4b9fff, 
+                0 0 60px #9b59b6;
+    transform: scale(1.1);
+}
+a.know-me{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: aliceblue;
+
+}
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+div.name-container{
+   font-size: 132px;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-align: center;
+    
+    display: flex;
+    position: relative;
+    top: 20%;
+    justify-content: center;
+    color: aliceblue;
+}
+
+spline-viewer{
+    position: absolute;
+    pointer-events: fill;
+    width: 70%;
+    right: 42px;
+    height: 91vh;
+    bottom:0;
+}
+
+.name-container::after{
+    content: 'NISHAN SHRESTHA';
+    text-transform: uppercase;
+    position: absolute;
+    inset: 0 0 0 0;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: aliceblue;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
